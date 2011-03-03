@@ -133,6 +133,10 @@ public class JSONSortKeys {
         return STR_PREFIX + s;
     }
 
+    /*
+      The list should contain sort keys, i.e. the elements have to be
+      transformed to sort keys by the caller.
+    */
     public static String listToSortKey(List<String> l) {
         StringBuffer sb = new StringBuffer((char) LIST_PREFIX);
         for (String s : l) {
